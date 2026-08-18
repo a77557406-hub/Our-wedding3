@@ -1,7 +1,7 @@
-type Props = { photoUrl?: string; groom: string; bride: string }
-export default function WeddingPhoto({ photoUrl, groom, bride }: Props) {
-  const resolvedPhotoUrl = photoUrl?.trim() || '/images/hero-wedding.jpg'
-  const hasPhoto = Boolean(resolvedPhotoUrl)
+type Props = { groom: string; bride: string }
+export default function WeddingPhoto({ groom, bride }: Props) {
+  const resolvedPhotoUrl = '/images/hero-wedding.jpg'
+  const hasPhoto = true
   return <section className="wedding-photo-section" aria-labelledby="photo-title">
     <p className="eyebrow">OUR MOMENT</p>
     <h2 id="photo-title">두 사람의 시작</h2>

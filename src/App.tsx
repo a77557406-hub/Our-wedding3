@@ -85,7 +85,7 @@ export default function App() {
       {isAdminView && <button className="edit-trigger" type="button" onClick={() => adminToken ? setEditing(true) : setShowAdminLogin(true)}>청첩장 정보 수정</button>}
     </header>
     <Calendar date={invitation.wedding_date} />
-    <WeddingPhoto photoUrl={invitation.photo_url} groom={invitation.groom} bride={invitation.bride} />
+    <WeddingPhoto groom={invitation.groom} bride={invitation.bride} />
     <section className="section promise"><span>❦</span><p>두 사람이 함께 걸어갈 첫걸음,<br />따뜻한 축복으로 함께해 주세요.</p></section>
     <section className="section location" id="location"><p className="eyebrow">LOCATION</p><h2>{invitation.venue}</h2><p className="address">{invitation.address}</p><iframe className="map-embed" title={`${invitation.venue} 위치 지도`} src={`https://www.google.com/maps?q=${encodeURIComponent(invitation.address)}&output=embed`} loading="lazy" referrerPolicy="no-referrer-when-downgrade" /><div className="map-links"><a className="map-link naver-map-link" href="https://naver.me/F74k0m9y" target="_blank" rel="noreferrer"><span className="map-brand" aria-hidden="true">N</span> 네이버맵 <span aria-hidden="true">↗</span></a><a className="map-link kakao-map-link" href={`https://map.kakao.com/link/search/${encodeURIComponent(invitation.address)}`} target="_blank" rel="noreferrer"><span className="map-brand" aria-hidden="true">K</span> 카카오맵 <span aria-hidden="true">↗</span></a></div><p className="guide">{invitation.guide_text}</p></section>
     <BrideReception />
