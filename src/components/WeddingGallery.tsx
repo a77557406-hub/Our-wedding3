@@ -6,7 +6,6 @@ const galleryPhotos = [
   { src: '/images/gallery-05.jpg', label: '웨딩 갤러리 사진 5' },
   { src: '/images/gallery-06.jpg', label: '웨딩 갤러리 사진 6' },
 ]
-
 export default function WeddingGallery() {
   return <section className="section wedding-gallery" aria-labelledby="gallery-title">
     <p className="eyebrow">WEDDING GALLERY</p>
