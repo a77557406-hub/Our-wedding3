@@ -22,6 +22,5 @@ export default function WeddingGallery() {
         <figcaption>{index + 1}</figcaption>
       </figure>)}
     </div>
-    <p className="gallery-help">사진 파일을 <strong>public/images</strong> 폴더에 넣고, gallery-01.jpg부터 gallery-06.jpg까지 이름을 맞추면 표시됩니다.</p>
   </section>
 }
